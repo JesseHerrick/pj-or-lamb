@@ -70,5 +70,17 @@ var pictures = [
   {
     url: "/img/14.jpg",
     type: "PJ"
+  },
+  {
+    url: "/img/5.jpg",
+    type: "lamb"
+  },
+  {
+    url: "/img/8.jpg",
+    type: "lamb"
+  },
+  {
+    url: "/img/12.jpg",
+    type: "lamb"
   }
 ];
