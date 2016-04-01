@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet" type="text/css" /> -->
+    <script async src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+  <title>PJ or a Lamb?</title>
+  </head>
+<body id="app" class="container"> 
+  <h2 v-show="ended">Game over!</h2>
+  <img class="img-responsive center-block" v-bind:src="current.url" v-show="!ended">
+  <div class="text-center answers" role="group">
+    <button type="button" class="btn btn-primary btn-lg btn-default" v-show="!ended" v-on:click="answer('PJ')">PJ</a>
+    <button type="button" class="btn btn-primary btn-lg btn-default" v-show="!ended" v-on:click="answer('lamb')">Lamb</a>
+  </div>
+</div>
+  <h2 class="totals">
+    {{correct}} / {{total}}
+  </h2>
+  <h3 v-show="ended">{{percentage}}%</h3>
+  <button class="btn btn-danger" type="button" v-on:click="restart">Restart!</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
