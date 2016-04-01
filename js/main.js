@@ -1,4 +1,3 @@
-
 var vm = new Vue({
   el: '#app',
   data: {
@@ -6,7 +5,8 @@ var vm = new Vue({
     pictures: pictures.slice(),
     total: 0,
     correct: 0,
-    ended: false
+    ended: false,
+    loading: true
   },
   computed: {
     // percentage correct
@@ -69,3 +69,4 @@ var vm = new Vue({
 });
 
 vm.play();
+

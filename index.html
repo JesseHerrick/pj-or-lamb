@@ -13,6 +13,7 @@
 <body id="app" class="container"> 
   <h2 v-show="ended">Game over!</h2>
   <img class="img-responsive center-block" v-bind:src="current.url" v-show="!ended">
+  <!-- <span class="glyphicon glyphicon-refresh loading spin" v-show="loading"></span> -->
   <div class="text-center answers" role="group">
     <button type="button" class="btn btn-primary btn-lg btn-default" v-show="!ended" v-on:click="answer('PJ')">PJ</a>
     <button type="button" class="btn btn-primary btn-lg btn-default" v-show="!ended" v-on:click="answer('lamb')">Lamb</a>
