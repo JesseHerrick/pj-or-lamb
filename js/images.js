@@ -68,10 +68,6 @@ var pictures = [
     type: "PJ"
   },
   {
-    url: "/img/14.jpg",
-    type: "PJ"
-  },
-  {
     url: "/img/5.jpg",
     type: "lamb"
   },
